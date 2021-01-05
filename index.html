@@ -1,236 +1,230 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Basic Homepage</title>
-<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-</head>
-<body>
-<div class="container">
-<header>
-  <div class="primary_header">
-    <h1 class="title">Basic Homepage</h1>
-    <h3 class="title">A Simple Homepage<br>
-    </h3>
-  </div>
-  <nav class="secondary_header" id="menu">
-    <ul>
-      <li>Home</li>
-    </ul>
-  </nav>
-</header>
-<br>
-<br>
-<br><br><br>
-<br>
-<br>
-
-<p style="text-align: center;">Date/Time: <span id="datetime"></span></p>
-
-<script>
-var dt = new Date();
-document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
-</script>
-  <span style="text-align: center;">Email:<u><span style="text-align: left;">
-  <select name="select" onChange="if(options[selectedIndex].value) window.location.href=(options[selectedIndex].value)">
-    <option value="/">Select one:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
-    <!-- padded with &nbsp; to align select widths -->
-    <option>=====</option>
-    <option value="https://www.spark.co.nz/xtramail/signin">Spark (xtra email)</option>
-    <option value="http://www.mail2web.com/">Mail2Web</option>
-    <option value="http://webmail.aol.com">AOL</option>
-    <option value="https://loginprodx.att.net/commonLogin/igate_edam/controller.do?TAM_OP=login&amp;USERNAME=unauthenticated&amp;ERROR_CODE=0x00000000&amp;ERROR_TEXT=HPDBA0521I%20%20%20Successful%20completion&amp;METHOD=GET&amp;URL=%2FFIM%2Fsps%2FATTidp%2Fsaml20%2Flogininitial%3FRequestBinding%3DHTTPPost%26PartnerId%3Dhttps%3A%2F%2Flogin.yahoo.com%2Fsaml%2F2.0%2Fatt%26.lang%3Den-US%26Target%3Dhttps%253a%2F%2Fmail.yahoo.com%253f.lts%3D1424986458%3Ftucd567%3Dw&amp;REFERER=https%3A%2F%2Fatt.yahoo.com%2F&amp;HOSTNAME=loginprodx.att.net&amp;AUTHNLEVEL=&amp;FAILREASON=&amp;PROTOCOL=https&amp;OLDSESSION=">AT&amp;T</option>
-    <option value="https://login.yahoo.com/config/login?.src=my&amp;.done=http://att.my.yahoo.com&amp;.intl=us&amp;.partner=sbc">AT&amp;T/Yahoo</option>
-    <option value="https://eam.centurylink.com/eam/login.do">CenturyLink</option>
-    <option value="https://www.charter.net/login/?targetUrl=http://www.charter.net/">Charter</option>
-    <option value="https://secure.cincinnatibell.net/login/?bounceto=http%3A%2F%2Fwww.cincinnatibell.net%2Fzmail%2F%3Fautologin%3Dtrue">Cincinnati Bell</option>
-    <option value="https://login.comcast.net/login?ts=547dda0d&amp;s=xwnamp">Comcast</option>
-    <option value="http://webmail.cox.net/wwwredir/index.htm">Cox</option>
-    <option value="http://webmail.covad.net/">Covad</option>
-    <option value="http://mail.draze.com/">Draze</option>
-    <option value="https://webmail.pas.earthlink.net/wam/login.jsp?redirect=%2Fwam%2Findex.jsp&amp;x=-1109217863">Earthlink</option>
-    <option value="http://registration.excite.com/">Excite</option>
-    <option value="https://www.fastmail.fm">FastMail</option>
-    <option value="http://www.figmedia.com/index.php?action=signup">Figmedia</option>
-    <option value="https://mail.google.com/">Gmail</option>
-    <option value="http://www.gmx.com/mail/#.1559516-header-nav1-1">GMX.com</option>
-    <option value="http://mail.hughes.net/">Hughes.net</option>
-    <option value="http://www.icqmail.com/">ICQmail</option>
-    <option value="https://www.inbox.com/login.aspx?gdi=true">Inbox.com</option>
-    <option value="http://webmail.juno.com/">Juno</option>
-    <option value="http://mail.lycos.com/">Lycos</option>
-    <option value="https://webmail.mhtc.net/">MHTC</option>
-    <option value="http://www.hotmail.com">Outlook.com (Hotmail)</option>
-    <option value="https://commcenter.mchsi.com/wmc/login">Mediacom</option>
-    <option value="http://my.myway.com/email_redir.jsp">MyWay</option>
-    <option value="http://www.ntelos.com/">NTELOS</option>
-    <option value="https://admin.isp.netscape.com/web_authentication/wba-010.jsp?page=https%3A%2F%2Fmyaccount.isp.netscape.com%2Fmyaccount%2Findex.do">Netscape</option>
-    <option value="http://webmail.netzero.net/">NetZero</option>
-    <option value="http://www.optonline.net/Home">Optimum</option>
-    <option value="http://reagan.com">Reagan.com</option>
-    <option value="https://webmail.roadrunner.com">Road Runner</option>
-    <option value="https://account.suddenlink.net/selfcare/checkemail.do">Suddenlink</option>
-    <option value="https://www.netaddress.com/tpl/Door/Login?Domain=usa.net">USA.net</option>
-    <option value="https://www.verizon.net/ssowebapp/VOLPortalLogin?TARGET=https://www.verizon.net/ssowebapp/protected/EmailLoginHelper">Verizon Netmail</option>
-    <option value="http://webmail.windstream.net">Windstream</option>
-    <option value="http://portal.wowway.net/">Wowway</option>
-    <option value="http://mail.yahoo.com/">Yahoo</option>
-  </select>
-  </span></u></span><br>
-  <br>
-<br>
-<h2 style="text-align: center;"><span style="text-decoration: underline;">News Sources</span></h2>
-<p style="text-align: center;"><br /><br>
-<br><br>
-<br>
-<!-- start sw-rss-feed code --> 
-<script type="text/javascript"> 
-<!-- 
-rssfeed_url = new Array(); 
-rssfeed_url[0]="https://rss.nzherald.co.nz/rss/xml/nzhtsrsscid_000000698.xml";  
-rssfeed_frame_width="300"; 
-rssfeed_frame_height="300"; 
-rssfeed_scroll="off"; 
-rssfeed_scroll_step="6"; 
-rssfeed_scroll_bar="off"; 
-rssfeed_target="_blank"; 
-rssfeed_font_size="12"; 
-rssfeed_font_face=""; 
-rssfeed_border="on"; 
-rssfeed_css_url=""; 
-rssfeed_title="on"; 
-rssfeed_title_name=""; 
-rssfeed_title_bgcolor="#3366ff"; 
-rssfeed_title_color="#fff"; 
-rssfeed_title_bgimage=""; 
-rssfeed_footer="off"; 
-rssfeed_footer_name="rss feed"; 
-rssfeed_footer_bgcolor="#fff"; 
-rssfeed_footer_color="#333"; 
-rssfeed_footer_bgimage=""; 
-rssfeed_item_title_length="50"; 
-rssfeed_item_title_color="#666"; 
-rssfeed_item_bgcolor="#fff"; 
-rssfeed_item_bgimage=""; 
-rssfeed_item_border_bottom="on"; 
-rssfeed_item_source_icon="off"; 
-rssfeed_item_date="off"; 
-rssfeed_item_description="on"; 
-rssfeed_item_description_length="120"; 
-rssfeed_item_description_color="#666"; 
-rssfeed_item_description_link_color="#333"; 
-rssfeed_item_description_tag="off"; 
-rssfeed_no_items="0"; 
-rssfeed_cache = "ca208ba02aedda838bd7045c3088e7e2"; 
-//--> 
-</script> 
-<script type="text/javascript" src="http://feed.surfing-waves.com/js/rss-feed.js"></script> 
-<!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. --> 
-<div style="color:#ccc;font-size:10px; text-align:right; width:300px;">Sponsered By <a href="https://bowlar.com" rel="noopener" target="_blank" style="color:#ccc;">Bowlar.com</a></div> 
-<!-- end sw-rss-feed code -->
-<br><br><br>
-<br><br><br>
-
-  
-  
-  
-  <p style="text-align: center;">
-    <a href="https://www.stuff.co.nz/" target="_self">STUFF</a> | <a href="https://www.tvnz.co.nz/one-news/new-zealand" target="_self">TVNZ</a> | <a href="https://www.nzherald.co.nz/">NZ HERALD</a> |
-    <a href="https://www.newshub.co.nz/"> NEWS HUB</a> | <a href="https://www.bing.com/news">Bing News </a>&nbsp;|&nbsp; <a href="https://news.google.com/">Google News </a>&nbsp;|&nbsp; <a href="https://news.yahoo.com/">Yahoo News </a>
-</p>
-<p style="text-align: center;">
-    <a href="https://www.chicagotribune.com/">Chicago Tribune</a> | <a href="https://www.cnn.com/">CNN</a> | <a href="https://www.ctvnews.ca/">CTV</a> | <a href="https://www.thedailybeast.com/">Daily Beast</a> |
-    <a href="https://www.drudgereport.com/">Drudge Report</a> | <a href="http://news.excite.com/index/id/home.html">Excite</a> | <a href="https://www.forbes.com/">Forbes</a> | <a href="https://www.foxnews.com/">FOX </a> |
-    <a href="https://news.google.com/">Google</a> | <a href="https://www.huffpost.com/">Huffington Post</a> | <a href="https://www.latimes.com/">LA Times</a> |<a href="https://www.msnbc.com/">MSNBC</a> |
-    <a href="mideastnews.html">Middle East News</a>
-</p>
-<p style="text-align: center;">
-    | <a href="https://www.nbcnews.com/">NBC</a> | <a href="https://www.npr.org/sections/news">NPR</a> | <a href="https://www.nydailynews.com/">New York Daily News</a> | <a href="https://www.nytimes.com/">New York Times</a> |
-    <a href="https://www.newsclusters.com">News Clusters</a> | <a href="https://www.newsnow.co.uk/h/">NewsNow</a> | <a href="https://www.newsweek.com/">Newsweek</a> | <a href="https://www.oann.com/">OANN</a> |
-    <a href="https://www.pbs.org/newshour/">PBS NewsHour</a> | <a href="https://www.reuters.com/">Reuters</a> | <a href="https://www.sfchronicle.com/">San Francisco Chronicle</a> | <a href="https://news.sky.com/">Sky News</a> |
-    <a href="https://time.com/">Time</a> | <a href="https://www.upi.com/">UPI</a> | <a href="https://www.usatoday.com/">USA Today</a> | <a href="https://wn.com/">WN.com</a> | <a href="https://www.wsj.com/">Wall Street Journal</a> |
-    <a href="https://www.washingtontimes.com/">Wash. Times</a> | <a href="https://www.washingtonpost.com/">Wash. Post</a> | <a href="http://www.wopular.com/home/full_news_rack">Wopular</a> |
-    <a href="http://www.worldpronews.com/">WorldProNews</a> | <a href="https://news.yahoo.com/">Yahoo</a>
-</p>
-
-<h2 style="text-align: center;"><br />
-  <strong>_________________________________________</strong><br>
-  <br>
-  Sports<br>
-  <br>
-</h2>
-<p style="text-align: center;"><a href="https://www.stuff.co.nz/sport" target="new">Stuff</a> -<a href="https://www.nzherald.co.nz/sport/" target="new"> NZ HERALD</a> - <a href="https://www.rnz.co.nz/news/sport" target="new">RNZ</a> - <a href="https://www.tvnz.co.nz/one-news/sport" target="new">TVNZ</a> - <a href="https://www.newshub.co.nz/home/sport.html" target="new">NEWSHUB</a></p>
-<h2 style="text-align: center;"><br />
-  <strong>_________________________________________</strong><br>
-
-
-
-	<h2 style="text-align: center;"><span style="text-decoration: underline;">Daily Diversions</span></h2>
-<p style="text-align: center;">
-    <br />
-    <br />
-    <br />
-    <a href="https://99u.adobe.com/">99U.com</a>&nbsp;|&nbsp;<a href="https://games.aarp.org/">AARP Games Page</a>&nbsp;|&nbsp;<a href="https://aeon.co/">Aeon</a>&nbsp;|&nbsp;
-    <a href="https://www.americanthinker.com/">American Thinker</a>&nbsp;|&nbsp;<a href="https://aldaily.com/">Arts &amp; Letters Daily</a>&nbsp;||&nbsp;
-    <a href="https://stayingsharp.aarp.org/about/brain-health/games/">Brain Games</a>&nbsp;|&nbsp;<a href="https://www.internet4classrooms.com/brain_teasers.htm">Brain Teasers</a>&nbsp;|&nbsp;
-    <a href="https://www.chess.com/">Chess Games</a>&nbsp;|&nbsp;<a href="https://www.yourclassical.org/programs/composers-datebook/episodes">Composers Datebook</a> |<a href="https://refdesk.com/crosswrd.html">Crosswords</a>&nbsp;|&nbsp;
-    <a href="https://www.cfa.harvard.edu/skyreport">Current Sky Information</a>&nbsp;|&nbsp;<a href="https://refdesk.com/quote.html">Daily Almanac</a>&nbsp;|&nbsp;
-    <a href="https://cryptograms.puzzlebaron.com/">Daily Cryptogram</a>&nbsp;|&nbsp;
-    <a href="http://www.threadbender.com/">
-        Daily<br />
-        <br />
-        Cryptoquote
-    </a>
-    &nbsp;|&nbsp;<a href="https://download.cnet.com/">Daily Download</a>&nbsp;|&nbsp;<a href="http://www.dailyhaiku.org/">Daily Haiku</a>&nbsp;|&nbsp;<a href="https://www.rd.com/jokes/">Daily Humor: Reader's Digest</a>&nbsp;|&nbsp;
-    <a href="http://www.jigzone.com/puzzles/">Daily Jigsaw Puzzle</a>&nbsp;|&nbsp;<a href="https://www.merriam-webster.com/word-games/daily-jumble-classic">Daily Word Jumble</a>&nbsp;|&nbsp;
-    <a href="https://www.dailywritingtips.com/category/misused-words/">Daily Writing Tips</a>&nbsp;|&nbsp;<a href="http://www.scopesys.com/today/">Events, Births, History</a>&nbsp;|&nbsp;
-    <a href="http://www.factslides.com/">FactSlides: Random Facts</a>&nbsp;|&nbsp;<a href="https://www.thefamouspeople.com/">Famous People Born Today</a>&nbsp;|&nbsp;
-</p>
-<p style="text-align: center;">
-    <a href="https://www.gamesforthebrain.com/">Games for the Brain</a>&nbsp;|&nbsp;<a href="http://www.googlesightseeing.com/">Google Sightseeing</a>&nbsp;|&nbsp;
-    <a href="https://refdesk.com/horoscps.html">Horoscope Resources</a>&nbsp;|&nbsp;<a href="https://www.newsmax.com/jokes/">Late Night Jokes</a>&nbsp;|&nbsp;<a href="https://www.lotteryusa.com/">Lottery Results</a>&nbsp;|&nbsp;
-    <a href="https://www.medpagetoday.com/">Medical News</a>&nbsp;|&nbsp;<a href="https://www.mix.com/">Mix (Formerly StumbleUpon)</a>&nbsp;|&nbsp;
-    <a href="https://www.moonconnection.com/moon_phases_calendar.phtml">Moon Phases</a>&nbsp;|&nbsp;<a href="https://www.brainyquote.com/topics/motivational">Motivational Quotes of the Day</a>&nbsp;|&nbsp;
-</p>
-<p style="text-align: center;">
-    <a href="https://www.imdb.com/">Movies</a>&nbsp;|&nbsp;<a href="https://www.netflix.com/">Netflix</a>&nbsp;|&nbsp;<a href="https://www.almanac.com/">Old Farmer's Almanac</a>&nbsp;|&nbsp;
-    <a href="https://poems.com/">Poetry Daily</a>&nbsp;|&nbsp;<a href="https://www.beliefnet.com/faiths/prayer/prayer-of-the-day.aspx">Prayer of the Day</a>&nbsp;|&nbsp;
-    <a href="https://www.brainyquote.com/quote_of_the_day">Quote of the Day</a>&nbsp;|&nbsp;<a href="https://en.wikipedia.org/wiki/Marq_de_Villiers">Random Wikipedia Article</a>&nbsp;|&nbsp;
-    <a href="https://www.sciencedaily.com/">Science Daily</a>&nbsp;|&nbsp;<a href="https://scitechdaily.com/">SciTech Daily Review</a>&nbsp;|&nbsp;
-</p>
-<p style="text-align: center;">
-    <a href="http://www.websudoku.com/">Sudoku Puzzles</a>&nbsp;|&nbsp;<a href="https://www.almanac.com/astronomy/sun-rise-and-set">Sun/Moon Rise &amp; Set</a>&nbsp;|&nbsp;
-    <a href="https://theawesomedaily.com/">The Awesome Daily</a>&nbsp;|&nbsp;<a href="https://www.thisdayinmusic.com/">This Day In Music</a>&nbsp;|&nbsp;
-    <a href="http://www.thisdayincountrymusic.com/">This Day In Country Music</a>&nbsp;|&nbsp;<a href="http://www.todayifoundout.com/">Today I Found Out</a>&nbsp;|&nbsp;
-    <a href="https://earthquake.usgs.gov/learn/today/">Today In Earthquake History</a>&nbsp;|&nbsp;<a href="https://www.loc.gov/item/today-in-history/may-04/">Today in History</a>&nbsp;|&nbsp;
-</p>
-<p style="text-align: center;">
-    <a href="https://www.allaboutjazz.com/php/facts.php">Today In Jazz History</a>&nbsp;|&nbsp;<a href="http://www.eastoftheweb.com/cgi-bin/top_scores.pl?game=cryptoquote">Today's Cryptoquote</a>&nbsp;|&nbsp;
-    <a href="https://earthsky.org/tonight">Tonight's Sky</a>&nbsp;|&nbsp;<a href="https://www.barnesandnoble.com/b/books/_/N-1fZ29Z8q8">Top 100 Bestseller Books</a>&nbsp;|&nbsp;
-    <a href="http://www.ebizmba.com/articles/most-popular-websites">Top Most Popular Websites</a>&nbsp;|&nbsp;<a href="http://www.ebizmba.com/articles/social-networking-websites">Top Social Networking Sites</a>&nbsp;|&nbsp;
-    <a href="https://www.tvguide.com/">TV</a>&nbsp;|&nbsp;<a href="http://almanac.mpr.org/">Writer's Almanac</a>&nbsp;|&nbsp;<a href="http://www.fourmilab.to/yoursky/">Your Sky</a>&nbsp;
-</p>
-
-
- 
-
-<div class="row"></div>
-<div class="row blockDisplay">
-  <div class="column_half left_half">
-    <h2 class="column_title">&nbsp;</h2>
-  </div>
-  <div class="column_half right_half">
-    <h2 class="column_title">&nbsp;</h2>
-  </div>
-</div>
-<div class="social"> </div>
-<footer class="secondary_header footer">
-  <div class="copyright">Website by Thomas</div>
-</footer>
-</div>
-</body>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Basic Homepage</title>
+      <link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   </head>
+   <body>
+      <div class="container">
+         <header>
+            <div class="primary_header">
+               <h1 class="title">Basic Homepage</h1>
+               <h3 class="title">A Simple Homepage<br>
+               </h3>
+            </div>
+            <nav class="secondary_header" id="menu">
+               <ul>
+                  <li>Home</li>
+               </ul>
+            </nav>
+         </header>
+         <br>
+         <br>
+         <br><br><br>
+         <br>
+         <br>
+         <p style="text-align: center;">Date/Time: <span id="datetime"></span></p>
+         <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+         </script>
+         <span style="text-align: center;">
+            Email:
+            <u>
+               <span style="text-align: left;">
+                  <select name="select" onChange="if(options[selectedIndex].value) window.location.href=(options[selectedIndex].value)">
+                     <option value="/">Select one:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                     <!-- padded with &nbsp; to align select widths -->
+                     <option>=====</option>
+                     <option value="https://www.spark.co.nz/xtramail/signin">Spark (xtra email)</option>
+                     <option value="http://www.mail2web.com/">Mail2Web</option>
+                     <option value="http://webmail.aol.com">AOL</option>
+                     <option value="https://loginprodx.att.net/commonLogin/igate_edam/controller.do?TAM_OP=login&amp;USERNAME=unauthenticated&amp;ERROR_CODE=0x00000000&amp;ERROR_TEXT=HPDBA0521I%20%20%20Successful%20completion&amp;METHOD=GET&amp;URL=%2FFIM%2Fsps%2FATTidp%2Fsaml20%2Flogininitial%3FRequestBinding%3DHTTPPost%26PartnerId%3Dhttps%3A%2F%2Flogin.yahoo.com%2Fsaml%2F2.0%2Fatt%26.lang%3Den-US%26Target%3Dhttps%253a%2F%2Fmail.yahoo.com%253f.lts%3D1424986458%3Ftucd567%3Dw&amp;REFERER=https%3A%2F%2Fatt.yahoo.com%2F&amp;HOSTNAME=loginprodx.att.net&amp;AUTHNLEVEL=&amp;FAILREASON=&amp;PROTOCOL=https&amp;OLDSESSION=">AT&amp;T</option>
+                     <option value="https://login.yahoo.com/config/login?.src=my&amp;.done=http://att.my.yahoo.com&amp;.intl=us&amp;.partner=sbc">AT&amp;T/Yahoo</option>
+                     <option value="https://eam.centurylink.com/eam/login.do">CenturyLink</option>
+                     <option value="https://www.charter.net/login/?targetUrl=http://www.charter.net/">Charter</option>
+                     <option value="https://secure.cincinnatibell.net/login/?bounceto=http%3A%2F%2Fwww.cincinnatibell.net%2Fzmail%2F%3Fautologin%3Dtrue">Cincinnati Bell</option>
+                     <option value="https://login.comcast.net/login?ts=547dda0d&amp;s=xwnamp">Comcast</option>
+                     <option value="http://webmail.cox.net/wwwredir/index.htm">Cox</option>
+                     <option value="http://webmail.covad.net/">Covad</option>
+                     <option value="http://mail.draze.com/">Draze</option>
+                     <option value="https://webmail.pas.earthlink.net/wam/login.jsp?redirect=%2Fwam%2Findex.jsp&amp;x=-1109217863">Earthlink</option>
+                     <option value="http://registration.excite.com/">Excite</option>
+                     <option value="https://www.fastmail.fm">FastMail</option>
+                     <option value="http://www.figmedia.com/index.php?action=signup">Figmedia</option>
+                     <option value="https://mail.google.com/">Gmail</option>
+                     <option value="http://www.gmx.com/mail/#.1559516-header-nav1-1">GMX.com</option>
+                     <option value="http://mail.hughes.net/">Hughes.net</option>
+                     <option value="http://www.icqmail.com/">ICQmail</option>
+                     <option value="https://www.inbox.com/login.aspx?gdi=true">Inbox.com</option>
+                     <option value="http://webmail.juno.com/">Juno</option>
+                     <option value="http://mail.lycos.com/">Lycos</option>
+                     <option value="https://webmail.mhtc.net/">MHTC</option>
+                     <option value="http://www.hotmail.com">Outlook.com (Hotmail)</option>
+                     <option value="https://commcenter.mchsi.com/wmc/login">Mediacom</option>
+                     <option value="http://my.myway.com/email_redir.jsp">MyWay</option>
+                     <option value="http://www.ntelos.com/">NTELOS</option>
+                     <option value="https://admin.isp.netscape.com/web_authentication/wba-010.jsp?page=https%3A%2F%2Fmyaccount.isp.netscape.com%2Fmyaccount%2Findex.do">Netscape</option>
+                     <option value="http://webmail.netzero.net/">NetZero</option>
+                     <option value="http://www.optonline.net/Home">Optimum</option>
+                     <option value="http://reagan.com">Reagan.com</option>
+                     <option value="https://webmail.roadrunner.com">Road Runner</option>
+                     <option value="https://account.suddenlink.net/selfcare/checkemail.do">Suddenlink</option>
+                     <option value="https://www.netaddress.com/tpl/Door/Login?Domain=usa.net">USA.net</option>
+                     <option value="https://www.verizon.net/ssowebapp/VOLPortalLogin?TARGET=https://www.verizon.net/ssowebapp/protected/EmailLoginHelper">Verizon Netmail</option>
+                     <option value="http://webmail.windstream.net">Windstream</option>
+                     <option value="http://portal.wowway.net/">Wowway</option>
+                     <option value="http://mail.yahoo.com/">Yahoo</option>
+                  </select>
+               </span>
+            </u>
+         </span>
+         <br>
+         <br>
+         <br>
+         <h2 style="text-align: center;"><span style="text-decoration: underline;">News Sources</span></h2>
+         <p style="text-align: center;">
+            <br /><br>
+            <br><br>
+            <br>
+            <!-- start sw-rss-feed code --> 
+            <script type="text/javascript"> 
+               <!-- 
+               rssfeed_url = new Array(); 
+               rssfeed_url[0]="https://rss.nzherald.co.nz/rss/xml/nzhtsrsscid_000000698.xml";  
+               rssfeed_frame_width="300"; 
+               rssfeed_frame_height="300"; 
+               rssfeed_scroll="off"; 
+               rssfeed_scroll_step="6"; 
+               rssfeed_scroll_bar="off"; 
+               rssfeed_target="_blank"; 
+               rssfeed_font_size="12"; 
+               rssfeed_font_face=""; 
+               rssfeed_border="on"; 
+               rssfeed_css_url=""; 
+               rssfeed_title="on"; 
+               rssfeed_title_name=""; 
+               rssfeed_title_bgcolor="#3366ff"; 
+               rssfeed_title_color="#fff"; 
+               rssfeed_title_bgimage=""; 
+               rssfeed_footer="off"; 
+               rssfeed_footer_name="rss feed"; 
+               rssfeed_footer_bgcolor="#fff"; 
+               rssfeed_footer_color="#333"; 
+               rssfeed_footer_bgimage=""; 
+               rssfeed_item_title_length="50"; 
+               rssfeed_item_title_color="#666"; 
+               rssfeed_item_bgcolor="#fff"; 
+               rssfeed_item_bgimage=""; 
+               rssfeed_item_border_bottom="on"; 
+               rssfeed_item_source_icon="off"; 
+               rssfeed_item_date="off"; 
+               rssfeed_item_description="on"; 
+               rssfeed_item_description_length="120"; 
+               rssfeed_item_description_color="#666"; 
+               rssfeed_item_description_link_color="#333"; 
+               rssfeed_item_description_tag="off"; 
+               rssfeed_no_items="0"; 
+               rssfeed_cache = "ca208ba02aedda838bd7045c3088e7e2"; 
+               //--> 
+            </script> 
+            <script type="text/javascript" src="http://feed.surfing-waves.com/js/rss-feed.js"></script> 
+            <!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. --> 
+         <div style="color:#ccc;font-size:10px; text-align:right; width:300px;">Sponsered By <a href="https://bowlar.com" rel="noopener" target="_blank" style="color:#ccc;">Bowlar.com</a></div>
+         <!-- end sw-rss-feed code -->
+         <br><br><br>
+         <br><br><br>
+         <p style="text-align: center;">
+            <a href="https://www.stuff.co.nz/" target="_self">STUFF</a> | <a href="https://www.tvnz.co.nz/one-news/new-zealand" target="_self">TVNZ</a> | <a href="https://www.nzherald.co.nz/">NZ HERALD</a> |
+            <a href="https://www.newshub.co.nz/"> NEWS HUB</a> | <a href="https://www.bing.com/news">Bing News </a>&nbsp;|&nbsp; <a href="https://news.google.com/">Google News </a>&nbsp;|&nbsp; <a href="https://news.yahoo.com/">Yahoo News </a>
+         </p>
+         <p style="text-align: center;">
+            <a href="https://www.chicagotribune.com/">Chicago Tribune</a> | <a href="https://www.cnn.com/">CNN</a> | <a href="https://www.ctvnews.ca/">CTV</a> | <a href="https://www.thedailybeast.com/">Daily Beast</a> |
+            <a href="https://www.drudgereport.com/">Drudge Report</a> | <a href="http://news.excite.com/index/id/home.html">Excite</a> | <a href="https://www.forbes.com/">Forbes</a> | <a href="https://www.foxnews.com/">FOX </a> |
+            <a href="https://news.google.com/">Google</a> | <a href="https://www.huffpost.com/">Huffington Post</a> | <a href="https://www.latimes.com/">LA Times</a> |<a href="https://www.msnbc.com/">MSNBC</a> |
+            <a href="mideastnews.html">Middle East News</a>
+         </p>
+         <p style="text-align: center;">
+            | <a href="https://www.nbcnews.com/">NBC</a> | <a href="https://www.npr.org/sections/news">NPR</a> | <a href="https://www.nydailynews.com/">New York Daily News</a> | <a href="https://www.nytimes.com/">New York Times</a> |
+            <a href="https://www.newsclusters.com">News Clusters</a> | <a href="https://www.newsnow.co.uk/h/">NewsNow</a> | <a href="https://www.newsweek.com/">Newsweek</a> | <a href="https://www.oann.com/">OANN</a> |
+            <a href="https://www.pbs.org/newshour/">PBS NewsHour</a> | <a href="https://www.reuters.com/">Reuters</a> | <a href="https://www.sfchronicle.com/">San Francisco Chronicle</a> | <a href="https://news.sky.com/">Sky News</a> |
+            <a href="https://time.com/">Time</a> | <a href="https://www.upi.com/">UPI</a> | <a href="https://www.usatoday.com/">USA Today</a> | <a href="https://wn.com/">WN.com</a> | <a href="https://www.wsj.com/">Wall Street Journal</a> |
+            <a href="https://www.washingtontimes.com/">Wash. Times</a> | <a href="https://www.washingtonpost.com/">Wash. Post</a> | <a href="http://www.wopular.com/home/full_news_rack">Wopular</a> |
+            <a href="http://www.worldpronews.com/">WorldProNews</a> | <a href="https://news.yahoo.com/">Yahoo</a>
+         </p>
+         <h2 style="text-align: center;"><br />
+            <strong>_________________________________________</strong><br>
+            <br>
+            Sports<br>
+            <br>
+         </h2>
+         <p style="text-align: center;"><a href="https://www.stuff.co.nz/sport" target="new">Stuff</a> -<a href="https://www.nzherald.co.nz/sport/" target="new"> NZ HERALD</a> - <a href="https://www.rnz.co.nz/news/sport" target="new">RNZ</a> - <a href="https://www.tvnz.co.nz/one-news/sport" target="new">TVNZ</a> - <a href="https://www.newshub.co.nz/home/sport.html" target="new">NEWSHUB</a></p>
+         <h2 style="text-align: center;">
+         <br />
+         <strong>_________________________________________</strong><br>
+         <h2 style="text-align: center;"><span style="text-decoration: underline;">Daily Diversions</span></h2>
+         <p style="text-align: center;">
+            <br />
+            <br />
+            <br />
+            <a href="https://99u.adobe.com/">99U.com</a>&nbsp;|&nbsp;<a href="https://games.aarp.org/">AARP Games Page</a>&nbsp;|&nbsp;<a href="https://aeon.co/">Aeon</a>&nbsp;|&nbsp;
+            <a href="https://www.americanthinker.com/">American Thinker</a>&nbsp;|&nbsp;<a href="https://aldaily.com/">Arts &amp; Letters Daily</a>&nbsp;||&nbsp;
+            <a href="https://stayingsharp.aarp.org/about/brain-health/games/">Brain Games</a>&nbsp;|&nbsp;<a href="https://www.internet4classrooms.com/brain_teasers.htm">Brain Teasers</a>&nbsp;|&nbsp;
+            <a href="https://www.chess.com/">Chess Games</a>&nbsp;|&nbsp;<a href="https://www.yourclassical.org/programs/composers-datebook/episodes">Composers Datebook</a> |<a href="https://refdesk.com/crosswrd.html">Crosswords</a>&nbsp;|&nbsp;
+            <a href="https://www.cfa.harvard.edu/skyreport">Current Sky Information</a>&nbsp;|&nbsp;<a href="https://refdesk.com/quote.html">Daily Almanac</a>&nbsp;|&nbsp;
+            <a href="https://cryptograms.puzzlebaron.com/">Daily Cryptogram</a>&nbsp;|&nbsp;
+            <a href="http://www.threadbender.com/">
+            Daily<br />
+            <br />
+            Cryptoquote
+            </a>
+            &nbsp;|&nbsp;<a href="https://download.cnet.com/">Daily Download</a>&nbsp;|&nbsp;<a href="http://www.dailyhaiku.org/">Daily Haiku</a>&nbsp;|&nbsp;<a href="https://www.rd.com/jokes/">Daily Humor: Reader's Digest</a>&nbsp;|&nbsp;
+            <a href="http://www.jigzone.com/puzzles/">Daily Jigsaw Puzzle</a>&nbsp;|&nbsp;<a href="https://www.merriam-webster.com/word-games/daily-jumble-classic">Daily Word Jumble</a>&nbsp;|&nbsp;
+            <a href="https://www.dailywritingtips.com/category/misused-words/">Daily Writing Tips</a>&nbsp;|&nbsp;<a href="http://www.scopesys.com/today/">Events, Births, History</a>&nbsp;|&nbsp;
+            <a href="http://www.factslides.com/">FactSlides: Random Facts</a>&nbsp;|&nbsp;<a href="https://www.thefamouspeople.com/">Famous People Born Today</a>&nbsp;|&nbsp;
+         </p>
+         <p style="text-align: center;">
+            <a href="https://www.gamesforthebrain.com/">Games for the Brain</a>&nbsp;|&nbsp;<a href="http://www.googlesightseeing.com/">Google Sightseeing</a>&nbsp;|&nbsp;
+            <a href="https://refdesk.com/horoscps.html">Horoscope Resources</a>&nbsp;|&nbsp;<a href="https://www.newsmax.com/jokes/">Late Night Jokes</a>&nbsp;|&nbsp;<a href="https://www.lotteryusa.com/">Lottery Results</a>&nbsp;|&nbsp;
+            <a href="https://www.medpagetoday.com/">Medical News</a>&nbsp;|&nbsp;<a href="https://www.mix.com/">Mix (Formerly StumbleUpon)</a>&nbsp;|&nbsp;
+            <a href="https://www.moonconnection.com/moon_phases_calendar.phtml">Moon Phases</a>&nbsp;|&nbsp;<a href="https://www.brainyquote.com/topics/motivational">Motivational Quotes of the Day</a>&nbsp;|&nbsp;
+         </p>
+         <p style="text-align: center;">
+            <a href="https://www.imdb.com/">Movies</a>&nbsp;|&nbsp;<a href="https://www.netflix.com/">Netflix</a>&nbsp;|&nbsp;<a href="https://www.almanac.com/">Old Farmer's Almanac</a>&nbsp;|&nbsp;
+            <a href="https://poems.com/">Poetry Daily</a>&nbsp;|&nbsp;<a href="https://www.beliefnet.com/faiths/prayer/prayer-of-the-day.aspx">Prayer of the Day</a>&nbsp;|&nbsp;
+            <a href="https://www.brainyquote.com/quote_of_the_day">Quote of the Day</a>&nbsp;|&nbsp;<a href="https://en.wikipedia.org/wiki/Marq_de_Villiers">Random Wikipedia Article</a>&nbsp;|&nbsp;
+            <a href="https://www.sciencedaily.com/">Science Daily</a>&nbsp;|&nbsp;<a href="https://scitechdaily.com/">SciTech Daily Review</a>&nbsp;|&nbsp;
+         </p>
+         <p style="text-align: center;">
+            <a href="http://www.websudoku.com/">Sudoku Puzzles</a>&nbsp;|&nbsp;<a href="https://www.almanac.com/astronomy/sun-rise-and-set">Sun/Moon Rise &amp; Set</a>&nbsp;|&nbsp;
+            <a href="https://theawesomedaily.com/">The Awesome Daily</a>&nbsp;|&nbsp;<a href="https://www.thisdayinmusic.com/">This Day In Music</a>&nbsp;|&nbsp;
+            <a href="http://www.thisdayincountrymusic.com/">This Day In Country Music</a>&nbsp;|&nbsp;<a href="http://www.todayifoundout.com/">Today I Found Out</a>&nbsp;|&nbsp;
+            <a href="https://earthquake.usgs.gov/learn/today/">Today In Earthquake History</a>&nbsp;|&nbsp;<a href="https://www.loc.gov/item/today-in-history/may-04/">Today in History</a>&nbsp;|&nbsp;
+         </p>
+         <p style="text-align: center;">
+            <a href="https://www.allaboutjazz.com/php/facts.php">Today In Jazz History</a>&nbsp;|&nbsp;<a href="http://www.eastoftheweb.com/cgi-bin/top_scores.pl?game=cryptoquote">Today's Cryptoquote</a>&nbsp;|&nbsp;
+            <a href="https://earthsky.org/tonight">Tonight's Sky</a>&nbsp;|&nbsp;<a href="https://www.barnesandnoble.com/b/books/_/N-1fZ29Z8q8">Top 100 Bestseller Books</a>&nbsp;|&nbsp;
+            <a href="http://www.ebizmba.com/articles/most-popular-websites">Top Most Popular Websites</a>&nbsp;|&nbsp;<a href="http://www.ebizmba.com/articles/social-networking-websites">Top Social Networking Sites</a>&nbsp;|&nbsp;
+            <a href="https://www.tvguide.com/">TV</a>&nbsp;|&nbsp;<a href="http://almanac.mpr.org/">Writer's Almanac</a>&nbsp;|&nbsp;<a href="http://www.fourmilab.to/yoursky/">Your Sky</a>&nbsp;
+         </p>
+         <div class="row"></div>
+         <div class="row blockDisplay">
+            <div class="column_half left_half">
+               <h2 class="column_title">&nbsp;</h2>
+            </div>
+            <div class="column_half right_half">
+               <h2 class="column_title">&nbsp;</h2>
+            </div>
+         </div>
+         <div class="social"> </div>
+         <footer class="secondary_header footer">
+            <div class="copyright">Website by Thomas</div>
+         </footer>
+      </div>
+   </body>
 </html>
