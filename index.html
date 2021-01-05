@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Simple Theme</title>
+<title>Basic Homepage</title>
 <link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,11 +23,15 @@
     </ul>
   </nav>
 </header>
-<strong>
-<section> </section>
-</strong><br>
 <br>
 <br>
+<br><br>
+<p style="text-align: center;">Date/Time: <span id="datetime"></span></p>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+</script>
   <span style="text-align: center;">Email:<u><span style="text-align: left;">
   <select name="select" onChange="if(options[selectedIndex].value) window.location.href=(options[selectedIndex].value)">
     <option value="/">Select one:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
@@ -87,7 +91,7 @@
   Sports<br>
   <br>
 </h2>
-<p style="text-align: center;"><a href="https://www.stuff.co.nz/sport" target="new">Stuff</a><a href="https://www.cbssports.com/"></a> -<a href="https://www.nzherald.co.nz/sport/" target="new"> NZ HERALD</a><a href="https://www.espn.com/"></a> - <a href="https://www.rnz.co.nz/news/sport" target="new">RNZ</a> - <a href="https://www.tvnz.co.nz/one-news/sport" target="new">TVNZ</a> - <a href="https://www.newshub.co.nz/home/sport.html" target="new">NEWSHUB</a></p>
+<p style="text-align: center;"><a href="https://www.stuff.co.nz/sport" target="new">Stuff</a> -<a href="https://www.nzherald.co.nz/sport/" target="new"> NZ HERALD</a> - <a href="https://www.rnz.co.nz/news/sport" target="new">RNZ</a> - <a href="https://www.tvnz.co.nz/one-news/sport" target="new">TVNZ</a> - <a href="https://www.newshub.co.nz/home/sport.html" target="new">NEWSHUB</a></p>
 <h2 style="text-align: center;"><br />
   <strong>_________________________________________</strong><br>
 <h2 style="text-align: center;"><span style="text-decoration: underline;">Daily Diversions</span></h2>
