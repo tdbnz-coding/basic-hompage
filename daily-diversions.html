@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Homepage</title>
+    <title>Daily Diversions</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -14,7 +14,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
@@ -23,7 +23,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="sports.html">Sports</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="daily-diversions.html">Daily Diversions</a>
                 </li>
             </ul>
@@ -31,19 +31,14 @@
     </nav>
     <div class="container">
         <header class="my-4">
-            <h1 class="text-center">Basic Homepage</h1>
-            <h3 class="text-center">A Simple Homepage</h3>
+            <h1 class="text-center">Daily Diversions</h1>
         </header>
-        <p class="text-center">Date/Time: <span id="datetime"></span></p>
-        <script>
-            var dt = new Date();
-            document.getElementById("datetime").innerHTML = 
-                ("0" + dt.getDate()).slice(-2) + "." + 
-                ("0" + (dt.getMonth() + 1)).slice(-2) + "." + 
-                dt.getFullYear() + " " + 
-                ("0" + dt.getHours()).slice(-2) + ":" + 
-                ("0" + dt.getMinutes()).slice(-2);
-        </script>
+        <div class="text-center">
+            <h3>Games and Fun</h3>
+            <a href="https://www.jigzone.com/" target="_blank">JigZone (Puzzles)</a> |
+            <a href="https://www.miniclip.com/games/en/" target="_blank">MiniClip (Games)</a> |
+            <a href="https://www.chess.com/" target="_blank">Chess.com</a>
+        </div>
         <footer class="text-center mt-4">
             <div class="copyright">Website by Thomas</div>
         </footer>
