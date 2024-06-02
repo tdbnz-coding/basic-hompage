@@ -1,36 +1,46 @@
-/* styles.css */
 body {
-    padding-top: 70px; /* Space for the fixed navbar */
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-.navbar, .footer {
-    background-color: #000;
+
+.navbar {
+    z-index: 9999; /* Ensure navbar stays on top */
 }
-.footer {
-    position: relative;
+
+.sidebar {
+    position: fixed;
+    top: 70px;
     left: 0;
     bottom: 0;
-    width: 100%;
-    text-align: center;
-    color: white;
-    padding: 10px 0;
-}
-.navbar-text {
-    color: white;
-}
-.sidebar {
-    width: 200px;
-    position: fixed;
-    top: 70px; /* Space for the fixed navbar */
-    left: 0;
-    height: 100%;
-    background-color: #f8f9fa;
+    z-index: 1000; /* Ensure sidebar stays on top */
     padding-top: 20px;
 }
+
 .content {
-    margin-left: 220px; /* Width of the sidebar + margin */
+    margin-left: 220px;
     padding: 20px;
     flex: 1;
+}
+
+.footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .content {
+        margin-left: 0;
+    }
 }
