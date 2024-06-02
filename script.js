@@ -12,8 +12,11 @@ function updateDateTime() {
     document.getElementById('date-time').innerText = dateTimeString;
 }
 
-// Update date and time every second
-setInterval(updateDateTime, 1000);
+// Ensure the function runs after the DOM has fully loaded
+window.onload = function() {
+    // Update date and time every second
+    setInterval(updateDateTime, 1000);
 
-// Initial call to display the date and time immediately when the page loads
-updateDateTime();
+    // Initial call to display the date and time immediately when the page loads
+    updateDateTime();
+}
