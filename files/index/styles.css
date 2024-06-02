@@ -1,0 +1,13 @@
+/* Add your custom CSS styles here */
+.navbar {
+  background-color: #ffffff;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40; /* Bootstrap dark color */
+  color: #fff;
+  padding: 20px 0;
+}
